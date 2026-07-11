@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .spotify-link {
+    @apply text-[#B1B1B1] text-sm font-medium no-underline hover:text-white transition-colors duration-200 inline-block;
+  }
+}

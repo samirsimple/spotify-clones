@@ -1,0 +1,19 @@
+/* Делаем красивый скроллбар для сайдбара */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Ширина полосы скролла */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* В обычном состоянии он невидим */
+  border-radius: 0px;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #5a5a5a; /* Появляется серый ползунок только при наведении на панель */
+}
+
+@layer components {
+  .spotify-link {
+    @apply text-[#B1B1B1] text-sm font-medium no-underline hover:text-white transition-colors duration-200 inline-block;
+  }
+}
