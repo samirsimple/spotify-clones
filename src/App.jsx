@@ -2,6 +2,9 @@ import React from 'react';
 import { useState } from 'react';
 import StartCarousel from './StartCarousel'; // или укажи правильный путь, например, './components/StartCarousel'
 import { useRef } from 'react';
+import missyou from './img/missyou.png'
+import oliver from './img/oliver.png'
+import oliver2 from './img/oliver2.png'
 
 function App() {
 const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -293,7 +296,7 @@ const tiktokTrendsData = [
   
             {/* Карточка 1 */}
             <div className="mt-10 ml-6 relative bg-white/5 hover:bg-white/10 h-16 rounded-md cursor-pointer transition flex items-center gap-4 pr-4 group overflow-hidden">
-              <div className="w-16 h-full bg-[#282828] rounded-l-md shrink-0"><img src="src/img/missyou.png" alt="" /></div>
+              <div className="w-16 h-full bg-[#282828] rounded-l-md shrink-0"><img src={missyou} alt="" /></div>
               <div className="flex-1 min-w-0">
                 <p className="font-bold text-sm  text-white">MIS YOU-Bonus...</p>
                 <p className='font-bold text-[14px] text-[#B1B1B1]'>Oliver Tree,Robin...</p>
@@ -307,7 +310,7 @@ const tiktokTrendsData = [
 
 
             <div className="mt-10 mr-6 relative bg-white/5 hover:bg-white/10 h-16 rounded-md cursor-pointer transition  flex items-center gap-4 pr-4 group overflow-hidden">
-              <div className="w-16 h-full bg-[#282828] rounded-l-md shrink-0"><img src="src/img/Spotify-Web-Player-Music-for-everyone-07-07-2026_10_42_AM.png" alt="" className='w-16 h-16'/></div>
+              <div className="w-16 h-full bg-[#282828] rounded-l-md shrink-0"><img src={oliver2} alt="" className='w-16 h-16'/></div>
               <div className="flex-1 min-w-0">
                 <p className="font-bold text-sm  text-white">Oliver Tree</p>
               
@@ -849,7 +852,7 @@ const tiktokTrendsData = [
   hover:[&::-webkit-scrollbar-thumb]:bg-[#3b3b3b] 
   [&::-webkit-scrollbar-thumb]:rounded-0 px-2 ">
       <div className='w-60'>
-        <img src="src/img/missyou.png" alt="" className='min-w-full h-67'/>
+        <img src={missyou} alt="" className='min-w-full h-67'/>
       </div>
       <div className='flex gap-2'>
         <div className='grid gap-2 w-50'>
@@ -861,7 +864,7 @@ const tiktokTrendsData = [
         </div>
       </div>
       <div className='bg-[#1F1F1F] rounded-xl '>
-        <img src="src/img/Spotify-Web-Player-Music-for-everyone-07-01-2026_11_25_AM.png" alt="" />
+        <img src={oliver} alt="" />
         <div className='flex gap-2 mt-3 px-3'>
           <h1 className='text-white font-bold'>Oliver Tree</h1><div className="flex items-center justify-center w-6 h-6 bg-[#1db954] text-white rounded-full">
           {/* Маленькая белая галочка из Font Awesome */}
@@ -917,7 +920,7 @@ const tiktokTrendsData = [
         {/* Левая часть плеера: Текущая песня */}
         <div className="flex items-center gap-3 w-1/4">
           <div className="w-14 h-14 bg-[#282828] rounded-md overflow-hidden shrink-0">
-              <img src="src/img/missyou.png" alt="" className='min-w-16 h-16'/>
+              <img src={missyou} alt="" className='min-w-16 h-16'/>
           </div>
           <div className="overflow-hidden">
             <p className="text-sm font-bold truncate hover:underline cursor-pointer">Miss you - Bonus track</p>
